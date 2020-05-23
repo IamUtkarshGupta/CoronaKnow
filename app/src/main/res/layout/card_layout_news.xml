@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+  >
+
+
+   <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="10dp"
+        app:contentPaddingRight="8dp"
+        app:contentPaddingLeft="8dp"
+        app:cardMaxElevation="15dp">
+
+        <RelativeLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <RelativeLayout
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:text="Author"
+                    android:textColor="#000000"
+
+                    android:gravity="center_vertical"
+                    android:id="@+id/cardAuthor"
+                    android:layout_marginTop="3dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="8sp"
+                    android:text="Updated"
+                    android:layout_below="@id/cardAuthor"
+                    android:gravity="center_vertical"
+                    android:id="@+id/cardUpdated"
+                    android:layout_marginTop="3dp"/>
+
+                <TextView
+                    android:id="@+id/cardTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="2dp"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"
+                    android:layout_below="@+id/cardUpdated"
+                    android:text="Card Title"
+                    android:textStyle="bold" />
+
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+   </android.support.v7.widget.CardView>
+</RelativeLayout>
